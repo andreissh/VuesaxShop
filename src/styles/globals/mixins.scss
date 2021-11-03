@@ -2,20 +2,16 @@
 //     font-family: 'Arial';
 // }
 
-@mixin ptsans {
-    font-family: 'PT Sans', 'Arial', sans-serif;
+@mixin montserrat {
+    font-family: 'Montserrat', 'Arial', sans-serif;
 }
 
-@mixin ptsans-i {
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-style: italic;
+@mixin montserrat-l {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
 }
 
-@mixin ptsans-b {
-    font-family: 'PT Sans', 'Arial', sans-serif;
-    font-weight: 700;
-}
-
-@mixin lato {
-    font-family: 'Lato', 'Arial', sans-serif;
+@mixin montserrat-sb {
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 600;
 }
