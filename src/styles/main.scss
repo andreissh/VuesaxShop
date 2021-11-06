@@ -32,6 +32,10 @@
 
     cursor: pointer;
 
+    &:hover {
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
+    }
+
     &--mb {
         margin-bottom: 4px;
 
@@ -57,6 +61,7 @@
         position: relative;
 
         display: block;
+        margin-right: 15px;
     
         &::after,
         &::before {
@@ -94,7 +99,11 @@
         background-color: #6f64f8;
         text-transform: uppercase;
 
-        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13)
+        box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.13);
+
+        &:hover {
+            background-color: lighten(#6f64f8, 2%);
+        }
     }
 
     &--white {
@@ -129,7 +138,7 @@
 .icon {
     position: absolute;
     top: 50%;
-    left: 0;
+    left: 5%;
     transform: translate(0, -50%);
 
     &--main {
@@ -437,6 +446,20 @@
 .main {
     display: flex;
 }
+
+h2 {
+    @include montserrat;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+h3 {
+    @include montserrat-sb;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #2c2c2c;
+}
 // === / COMMON === //
 
 // === SIDEBAR === //
@@ -527,7 +550,7 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    padding: 14px;
+    padding: 14px 20px;
 
     background-color: #fff;
     border-radius: 8px;
@@ -538,20 +561,34 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
+    width: 180px;
+}
+
+.profile-section__icons-button {
+    padding: 0;
+
+    line-height: 0;
+
+    border: 0;
+    background-color: #fff;
+    cursor: pointer;
 }
 
 .profile-section__main-block {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 300px;
+    width: 280px;
 }
 
 .profile-section__main-lang {
     @include montserrat;
     font-size: 14px;
     line-height: 18px;
+
+    border: 0;
+    appearance: none;
+    cursor: pointer;
 }
 
 .profile-section__main-info {
@@ -569,6 +606,8 @@
     @include montserrat-l;
     font-size: 11px;
     line-height: 13px;
+
+    text-align: right;
 }
 
 .breadcrumbs-section {
@@ -584,10 +623,6 @@
 
 .breadcrumbs-section__main-title {
     padding-right: 16px;
-
-    @include montserrat;
-    font-size: 24px;
-    line-height: 30px;
 
     border-right: 1px solid #979797;
 }
@@ -741,12 +776,6 @@
 .filters-title {
     margin-bottom: 25px;
 
-    @include montserrat-sb;
-    font-size: 18px;
-    line-height: 22px;
-
-    color: #2c2c2c;
-
     &--s {
         margin-bottom: 15px;
     }
@@ -895,7 +924,7 @@
     &::before {
         position: absolute;
         top: 20px;
-        left: 118px;
+        left: 112px;
         z-index: 2;
 
         width: 10px;
@@ -903,6 +932,7 @@
 
         content: '';
         background-color: #606060;
+        cursor: pointer;
     }
 
     &:after {
@@ -911,7 +941,7 @@
 
     &:before {
         transform: rotate(45deg);
-        left: 112.5px;
+        left: 106.5px;
     }
 }
 
@@ -1025,19 +1055,23 @@
     align-items: center;
     padding: 6px 10px;
 
-    border: 0;
-    background-color: #6f64f8;
-    border-radius: 3px;
-}
-
-.products__item-main-info-number {
-    margin: 1px 8px 0 0;
-
     @include montserrat;
     font-size: 14px;
     line-height: 18px;
 
     color: #fff;
+    border: 0;
+    background-color: #6f64f8;
+    border-radius: 3px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(#6f64f8, 2%);
+    }
+}
+
+.products__item-main-info-number {
+    margin: 1px 8px 0 0;
 }
 
 .products__item-main-info-price {
@@ -1087,6 +1121,11 @@
     border: 0;
     border-radius: 0 0 0 8px;
     background-color: #ededed;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(#ededed, 2%);
+    }
 }
 
 .products__item-buttons-add {
@@ -1106,6 +1145,11 @@
     border: 0;
     border-radius: 0 0 8px 0;
     background-color: #6f64f8;
+    cursor: pointer;
+
+    &:hover {
+        background-color: lighten(#6f64f8, 2%);
+    }
 }
 
 .products-lower-part {

@@ -14,7 +14,7 @@
             <div class="sidebar">
                 <div class="sidebar-block">
                     <div class="sidebar-main__logo-block">
-                        <img src="./img/logo.png" width="" height="" alt=""></img>
+                        <img src="./img/logo.png" width="38" height="27" alt="">
                         <p class="sidebar-main__logo-title">Vuesax</p>
                         <span class="circle circle--logo"></span>
                     </div>
@@ -192,28 +192,49 @@
         <div class="main-content-wrapper">
             <div class="profile-section">
                 <div class="profile-section__icons-block">
-                    <svg class="icon--todo"></svg>
-                    <svg class="icon--chat"></svg>
-                    <svg class="icon--mail"></svg>
-                    <svg class="icon--calendar"></svg>
-                    <svg class="icon--star"></svg>
+                    <button class="profile-section__icons-button" aria-label="Todo">
+                        <svg class="icon--todo"></svg>
+                    </button>
+                    <button class="profile-section__icons-button" aria-label="Chat">
+                        <svg class="icon--chat"></svg>
+                    </button>
+                    <button class="profile-section__icons-button" aria-label="Mail">
+                        <svg class="icon--mail"></svg>
+                    </button>
+                    <button class="profile-section__icons-button" aria-label="Calendar">
+                        <svg class="icon--calendar"></svg>
+                    </button>
+                    <button class="profile-section__icons-button" aria-label="Star">
+                        <svg class="icon--star"></svg>
+                    </button>
                 </div>
                 <div class="profile-section__main-block">
-                    <p class="profile-section__main-lang">English</p>
-                    <svg class="icon--bell"></svg>
-                    <svg class="icon--search"></svg>
+                    <select class="profile-section__main-lang">
+                        <option>English</option>
+                        <option>Russian</option>
+                    </select>
+                    <button class="profile-section__icons-button" aria-label="Bell">
+                        <svg class="icon--bell"></svg>
+                    </button>
+                    <button class="profile-section__icons-button" aria-label="Search">
+                        <svg class="icon--search"></svg>
+                    </button>
                     <div class="profile-section__main-info">
                         <p class="profile-section__main-info-name">John Doe</p>
                         <p class="profile-section__main-info-status">Avaliable</p>
                     </div>
-                    <img src="./img/avatar.png" width="" height="" alt="">
+                    <button class="profile-section__icons-button" aria-label="Avatar">
+                        <img src="./img/avatar.png" width="34" height="34" alt="">
+                    </button>
                 </div>
             </div>
             <div class="breadcrumbs-section">
                 <div class="breadcrumbs-section__main">
-                    <p class="breadcrumbs-section__main-title">Card Actions</p>
+                    <h2 class="breadcrumbs-section__main-title">Card Actions</h2>
                     <div class="breadcrumbs-section__main-breadcrumbs">
-                        <a href="#"><svg class="breadcrumbs-section__main-breadcrumbs-svg icon icon--home-bc"></svg></a>
+                        <a href="#" aria-label="Home">
+                            <svg class="breadcrumbs-section__main-breadcrumbs-svg icon icon--home-bc"></svg>
+                        </a>
                         <div class="breadcrumbs-section__main-breadcrumbs-item">
                             <span class="breadcrumbs-section__main-breadcrumbs-arrow"></span>
                             <span class="breadcrumbs-section__main-breadcrumbs-arrow--2"></span>
@@ -228,17 +249,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="breadcrumbs-section__settings">
+                <a class="breadcrumbs-section__settings" href="#" aria-label="Settings">
                     <span class="breadcrumbs-section__settings-bg"></span>
                     <svg class="icon icon--settings"></svg>
-                </div>
+                </a>
             </div>
             <div class="main-content">
                 <div class="filters-section">
                     <p class="filters-section__title">Filters</p>
                     <div class="subscribers-card">
                         <div class="subscribers-card-block">
-                            <p class="filters-title">Multi Range</p>
+                            <h3 class="filters-title">Multi Range</h3>
                             <label class="filters-label" for="radio-1">
                                 <span class="filters-radio"></span>
                                 <input id="radio-1" class="visually-hidden" type="radio">
@@ -266,139 +287,139 @@
                             </label>
                         </div>
                         <div class="subscribers-card-block subscribers-card-block--s">
-                            <p class="slider__title filters-title filters-title--s">
+                            <h3 class="slider__title filters-title filters-title--s">
                                 Slider<span class="slider__price">1.99 - 4098</span>
-                            </p>
-                            <img src="./img/slider.png" width="" height="" alt="">
+                            </h3>
+                            <img src="./img/slider.png" width="317" height="20" alt="">
                         </div>
                         <div class="subscribers-card-block">
-                            <p class="filters-title">Category</p>
+                            <h3 class="filters-title">Category</h3>
                             <label class="filters-label filters-label--check filters-label filters-label--check--check" for="check-1">
                                 <span class="filters-checkbox"></span>
                                 <input id="check-1" class="visually-hidden" type="checkbox">
                                 Cell Phones
                                 <span class="category__quan">1920</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-2">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-2" class="visually-hidden" type="checkbox">
                                 Computers & Tablets
                                 <span class="category__quan">1820</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-3">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-3" class="visually-hidden" type="checkbox">
                                 Cell Phone Accessories
                                 <span class="category__quan">462</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-4">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-4" class="visually-hidden" type="checkbox">
                                 Appliances
                                 <span class="category__quan">6556</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-5">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-5" class="visually-hidden" type="checkbox">
                                 Audio
                                 <span class="category__quan">120</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-6">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-6" class="visually-hidden" type="checkbox">
                                 iPhone Accessories
                                 <span class="category__quan">353</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-7">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-7" class="visually-hidden" type="checkbox">
                                 Cameras & Camcorders
                                 <span class="category__quan">45</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-8">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-8" class="visually-hidden" type="checkbox">
                                 iPhone Cases & Clips
                                 <span class="category__quan">456</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-9">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-9" class="visually-hidden" type="checkbox">
                                 TV & Home Theater
                                 <span class="category__quan">55</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-10">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-10" class="visually-hidden" type="checkbox">
                                 Small Kitchen Appliances
                                 <span class="category__quan">10</span>
                             </label>
                         </div>
                         <div class="subscribers-card-block">
-                            <p class="filters-title">Brand</p>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <h3 class="filters-title">Brand</h3>
+                            <label class="filters-label filters-label--check" for="check-11">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-11" class="visually-hidden" type="checkbox">
                                 Insigni
                                 <span class="category__quan">220</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-12">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-12" class="visually-hidden" type="checkbox">
                                 Samsung
                                 <span class="category__quan">120</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-13">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-13" class="visually-hidden" type="checkbox">
                                 Apple
                                 <span class="category__quan">320</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-14">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-14" class="visually-hidden" type="checkbox">
                                 HP
                                 <span class="category__quan">32</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-15">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-15" class="visually-hidden" type="checkbox">
                                 Sony
                                 <span class="category__quan">520</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-16">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-16" class="visually-hidden" type="checkbox">
                                 Metra
                                 <span class="category__quan">55</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-17">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-17" class="visually-hidden" type="checkbox">
                                 Dyne
                                 <span class="category__quan">120</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-18">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-18" class="visually-hidden" type="checkbox">
                                 LG
                                 <span class="category__quan">98</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-19">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-19" class="visually-hidden" type="checkbox">
                                 Canon
                                 <span class="category__quan">99</span>
                             </label>
-                            <label class="filters-label filters-label--check" for="check-1">
+                            <label class="filters-label filters-label--check" for="check-20">
                                 <span class="filters-checkbox"></span>
-                                <input id="check-1" class="visually-hidden" type="checkbox">
+                                <input id="check-20" class="visually-hidden" type="checkbox">
                                 Speck
                                 <span class="category__quan">575</span>
                             </label>
                         </div>
                         <div class="subscribers-card-block">
-                            <p class="filters-title">Rating</p>
+                            <h3 class="filters-title">Rating</h3>
                             <div class="rating-block">
                                 <div class="rating-block__stars">
                                     <svg class="icon--star--s"></svg>
@@ -485,12 +506,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/apple-watch.png" width="" height="" alt="">
+                                            <img src="./img/apple-watch.png" width="220" height="272" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">3.4</p>
+                                                    <span class="products__item-main-info-number">3.4</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$399</p>
@@ -517,12 +538,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/jbl-speaker.png" width="" height="" alt="">
+                                            <img src="./img/jbl-speaker.png" width="109" height="273" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">5.0</p>
+                                                    <span class="products__item-main-info-number">5.0</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$199</p>
@@ -549,12 +570,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/iphone-x.png" width="" height="" alt="">
+                                            <img src="./img/iphone-x.png" width="258" height="240" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">4.4</p>
+                                                    <span class="products__item-main-info-number">4.4</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$899</p>
@@ -581,12 +602,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/beats-headphones.png" width="" height="" alt="">
+                                            <img src="./img/beats-headphones.png" width="206" height="295" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">3.4</p>
+                                                    <span class="products__item-main-info-number">3.4</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$459</p>
@@ -613,12 +634,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/macbook-pro.png" width="" height="" alt="">
+                                            <img src="./img/macbook-pro.png" width="291" height="195" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">4.5</p>
+                                                    <span class="products__item-main-info-number">4.5</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$2499</p>
@@ -645,12 +666,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/ipad-pro.png" width="" height="" alt="">
+                                            <img src="./img/ipad-pro.png" width="223" height="253" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">5.0</p>
+                                                    <span class="products__item-main-info-number">5.0</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$899</p>
@@ -677,12 +698,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/homepod.png" width="" height="" alt="">
+                                            <img src="./img/homepod.png" width="224" height="275" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">3.3</p>
+                                                    <span class="products__item-main-info-number">3.3</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$399</p>
@@ -709,12 +730,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/jbuds.png" width="" height="" alt="">
+                                            <img src="./img/jbuds.png" width="291" height="200" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">5.0</p>
+                                                    <span class="products__item-main-info-number">5.0</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$2499</p>
@@ -741,12 +762,12 @@
                                 <li class="products__item">
                                     <div class="products__item-main">
                                         <div class="products__item-main-img-container">
-                                            <img src="./img/apple-mouse.png" width="" height="" alt="">
+                                            <img src="./img/apple-mouse.png" width="140" height="278" alt="">
                                         </div>
                                         <div class="products__item-main-lower-part">
                                             <div class="products__item-main-info">
                                                 <button class="products__item-main-info-rating">
-                                                    <p class="products__item-main-info-number">4.4</p>
+                                                    <span class="products__item-main-info-number">4.4</span>
                                                     <svg class="icon--star--white"></svg>
                                                 </button>
                                                 <p class="products__item-main-info-price">$99</p>
@@ -775,7 +796,7 @@
                         <div class="products-lower-part">
                             <div class="pagination">
                                 <div class="pagination__arrow">
-                                    <a class="pagination__link pagination__link-lt" href="#"></a>
+                                    <a class="pagination__link pagination__link-lt" href="#" aria-label="Page-lt"></a>
                                 </div>
                                 <div class="pagination__center">
                                     <a class="pagination__link" href="#">1</a>
@@ -790,12 +811,12 @@
                                     <a class="pagination__link" href="#">10</a>
                                 </div>
                                 <div class="pagination__arrow">
-                                    <a class="pagination__link pagination__link-gt" href="#"></a>
+                                    <a class="pagination__link pagination__link-gt" href="#" aria-label="Page-gt"></a>
                                 </div>
                             </div>
                             <div class="footer-logo">
                                 <p class="footer-logo__text">Powered by</p>
-                                <img src="./img/algolia-logo.png" width="" height="" alt="">
+                                <img src="./img/algolia-logo.png" width="150" height="41" alt="">
                             </div>
                         </div>
                     </div>
