@@ -55,9 +55,7 @@ const cssTask = () => {
 
     result = src(path.src.css)
         .pipe(sass())
-        .pipe(autoprefixer({
-            overrideBrowsers: ['last 3 versions']
-        }))
+        .pipe(autoprefixer(['last 2 versions']))
         .pipe(gcmq())
         .pipe(cleanCSS())
         .pipe(rename({ extname: '.min.css' }))

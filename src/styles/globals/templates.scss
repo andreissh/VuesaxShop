@@ -17,3 +17,16 @@
 
 //     &--s { @include vertical-indent(44px, 80px); }
 // }
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// .btn-reset {
+//     padding: 0;
+//     border: none;
+//     background-color: transparent;
+//     cursor: pointer;
+// }
